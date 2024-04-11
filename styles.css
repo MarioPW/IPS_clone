@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: aliceblue;
+}
+
+:root {
+    --primary: #00B5FC;
+    --secondary: #4B9EF4;
+    --third: #7584E2;
+    --foutrh: #9467C5;
+    --fifth: #A746A0;
+    --last: #AE1F74;
+}
+
+/*---------  All Elements Styles ------------*/
+
+body {
+    background-color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    background-color: white;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*-------------------------------------------------*/
+
+/*-------------  NAVBAR STYLES --------------------*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--last);
+}
+
+#logo-image {
+    height: 70px;
+    display: block;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 31px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.nav-items li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-items li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding-right: 32px;
+    text-align: justify;
+}
+
+.dropdown li {
+    display: block;
+    border-bottom: 1px solid #bebebe;
+}
+
+.dropdown {
+    padding: 2rem;
+    display: none;
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: calc(274px - 20px);
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.nav-items li:hover ul.dropdown {
+    display: flex;
+    position: absolute;
+}
+.nav-items li ul.dropdown li a {
+    color: black;
+    padding: 0.5rem 0;
+    text-wrap: nowrap;
+}
+
+button {
+    background-color: white;
+    padding: 8px 15px;
+    border: 2px;
+    border-radius: 25px;
+    color: var(--last);
+}
+
+button:hover {
+    background-color: aliceblue;
+    border-color: aliceblue;
+}
+
+button:active {
+    translate: 0 1px;
+}
+
+section {
+    height: 90vh;
+    color: black;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: var(--last);
+}
+/*------------------------------------------*/
+
+/*------------- HOME SECTION STYLES -------------------*/
+
+#home{
+    background-image: url("images\\happy-female-doctor-giving-high-fie-little-boy-who-came-with-father-hospital.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center top;
+}
